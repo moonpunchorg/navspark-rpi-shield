@@ -133,7 +133,7 @@ F 3 "" H 4100 2250 50  0000 C CNN
 $EndComp
 Text Label 3300 2650 0    60   ~ 0
 GND
-Text Label 2650 3050 2    60   ~ 0
+Text Label 2800 3050 2    60   ~ 0
 5V
 $Comp
 L PWR_FLAG #FLG03
@@ -152,12 +152,8 @@ NoConn ~ 2800 2950
 NoConn ~ 2800 2750
 NoConn ~ 3300 3050
 NoConn ~ 3300 2250
-Text Label 3550 1850 0    60   ~ 0
+Text Label 3300 1850 0    60   ~ 0
 GND
-Wire Wire Line
-	3300 1850 3550 1850
-Wire Wire Line
-	2800 3050 2650 3050
 Text Label 5450 2450 2    60   ~ 0
 SPI_MOSI
 Text Label 5450 2350 2    60   ~ 0
