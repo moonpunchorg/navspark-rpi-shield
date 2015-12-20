@@ -1141,7 +1141,7 @@
       (xy 0.78311 3.7338)) (layer B.SilkS) (width 0.01))
   )
 
-  (gr_text "RPi - Nav\n--------\nG22 - 1PPS\nG4 - TRIG\nG17 - G12\nG18 - G13 \nG27 - G14\nG23 - G16\nG24 - G20\nRX0 - TX1\nI2C, SPI\n" (at 114.8 118.4) (layer F.SilkS)
+  (gr_text "RPi - Nav\n--------\nG22 - 1PPS\nG4 - TRIG\nG17 - G12\nG18 - G13\nG27 - G14\nG23 - G16\nG24 - G20\nRX0 - TX1\nI2C, SPI\n" (at 114.8 118.4) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.2)))
   )
   (gr_text moonpunch.org (at 133.9 104.8) (layer B.SilkS)
