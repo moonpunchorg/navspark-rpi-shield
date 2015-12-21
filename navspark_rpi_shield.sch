@@ -59,7 +59,7 @@ L CONN_01X13 P2
 U 1 1 567604C2
 P 5650 2450
 F 0 "P2" H 5650 3150 50  0000 C CNN
-F 1 "CONN_01X13" V 5750 2450 50  0000 C CNN
+F 1 "CONN_01X13" V 5750 2500 50  0000 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_1x13" H 5650 2450 50  0001 C CNN
 F 3 "" H 5650 2450 50  0000 C CNN
 	1    5650 2450
@@ -102,10 +102,6 @@ F 3 "" H 4400 2150 50  0000 C CNN
 	1    4400 2150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4400 2150 4400 2300
-Wire Wire Line
-	4400 2600 4400 2750
 Text Label 4100 2250 2    60   ~ 0
 5V
 Text Label 4100 2650 2    60   ~ 0
@@ -220,10 +216,8 @@ Text Label 2800 2550 2    60   ~ 0
 GPIO13
 NoConn ~ 2800 2050
 NoConn ~ 6200 2750
-Connection ~ 4400 2250
-Connection ~ 4400 2650
-Text Notes 2250 3650 0    60   Italic 0
-(note: the pin numbering here does not correspond to\nthe Raspberry pin numbers, to account for the header\norientation)
+Text Notes 2400 3900 0    60   Italic 0
+Note: \nthe pin numbering here does\nnot directly correspond to the\nRPi pin numbers, to account\nfor the connector's header\norientation.
 $Comp
 L C C2
 U 1 1 5676322D
@@ -235,17 +229,6 @@ F 3 "" H 4650 2450 50  0000 C CNN
 	1    4650 2450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4650 2200 4650 2300
-Wire Wire Line
-	4650 2600 4650 2700
-Wire Wire Line
-	4100 2250 4400 2250
-Wire Wire Line
-	4400 2200 4650 2200
-Connection ~ 4400 2200
-Wire Wire Line
-	4650 2700 4400 2700
 $Comp
 L GND #PWR04
 U 1 1 5676079F
@@ -257,9 +240,26 @@ F 3 "" H 4400 2750 50  0000 C CNN
 	1    4400 2750
 	1    0    0    -1  
 $EndComp
+Text Notes 5100 3800 0    60   Italic 0
+Regular sizeboards, at the moment:\n* NavSpark\n* NavSpark-GL\n* NavSpark-BD\nand other compatible boards
+Wire Wire Line
+	4400 2150 4400 2300
+Wire Wire Line
+	4400 2600 4400 2750
+Connection ~ 4400 2250
+Connection ~ 4400 2650
+Wire Wire Line
+	4650 2200 4650 2300
+Wire Wire Line
+	4650 2600 4650 2700
+Wire Wire Line
+	4100 2250 4400 2250
+Wire Wire Line
+	4400 2200 4650 2200
+Connection ~ 4400 2200
+Wire Wire Line
+	4650 2700 4400 2700
 Connection ~ 4400 2700
 Wire Wire Line
 	4100 2650 4400 2650
-Text Notes 5100 3800 0    60   Italic 0
-Regular sizeboards, at the moment:\n* NavSpark\n* NavSpark-GL\n* NavSpark-BD\nand other compatible boards
 $EndSCHEMATC
