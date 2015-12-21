@@ -32,3 +32,16 @@ Revision v1, the proof of concept looks like this:
 
 [pcbfront]: ./images/navspark_rpi_shield_v1_front.png "PCB front rendering with Kicad"
 [pcbback]: ./images/navspark_rpi_shield_v1_back.png "PCB back rendering with KiCad"
+
+## License
+
+Copyright 2015 Gergely Imreh <imrehg@gmail.com>
+
+This documentation describes Open Hardware and is licensed under the
+[CERN OHL v1.2](./LICENSE.txt).
+
+You may redistribute and modify this documentation under the terms of the
+CERN OHL v.1.2. (http://ohwr.org/cernohl). This documentation is distributed
+WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY,
+SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE.
+Please see the CERN OHL v.1.2 for applicable conditions.
