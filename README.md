@@ -22,6 +22,5 @@ Revision v1, the proof of concept looks like this:
 [BeiDou]: https://en.wikipedia.org/wiki/BeiDou_Navigation_Satellite_System "BeiDou on Wikipedia"
 [timing]: https://gergely.imreh.net/blog/2015/11/navspark-beidou-ntp/ "Dual Satellite NTP server with Navspark"
 
-
-[pcbfront] ./images/navspark_rpi_shield_v1_front.png "PCB front rendering with Kicad"
-[pcbback] ./images/navspark_rpi_shield_v1_back.png "PCB back rendering with KiCad"
+[pcbfront]: ./images/navspark_rpi_shield_v1_front.png "PCB front rendering with Kicad"
+[pcbback]: ./images/navspark_rpi_shield_v1_back.png "PCB back rendering with KiCad"
