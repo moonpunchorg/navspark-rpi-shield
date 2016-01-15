@@ -35,8 +35,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "NavSpark Shield for Raspberry Pi"
-Date "2015-12-20"
-Rev "v1"
+Date "2016-01-14"
+Rev "v2"
 Comp "Moonpunch"
 Comment1 "CERN Open Hardware License 1.2"
 Comment2 ""
@@ -48,19 +48,19 @@ L CONN_02X13 P1
 U 1 1 56760429
 P 3050 2450
 F 0 "P1" H 3050 3150 50  0000 C CNN
-F 1 "CONN_02X13" V 3050 2450 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x13" H 3050 1700 50  0001 C CNN
+F 1 "RPI_02X13" V 3050 2450 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x13" H 3050 1700 50  0001 C CNN
 F 3 "" H 3050 1300 50  0000 C CNN
 	1    3050 2450
-	1    0    0    1   
+	-1   0    0    1   
 $EndComp
 $Comp
 L CONN_01X13 P2
 U 1 1 567604C2
 P 5650 2450
 F 0 "P2" H 5650 3150 50  0000 C CNN
-F 1 "CONN_01X13" V 5750 2500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x13" H 5650 2450 50  0001 C CNN
+F 1 "NAV_01X13" V 5750 2500 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x13" H 5650 2450 50  0001 C CNN
 F 3 "" H 5650 2450 50  0000 C CNN
 	1    5650 2450
 	1    0    0    1   
@@ -70,8 +70,8 @@ L CONN_01X12 P3
 U 1 1 567604F5
 P 6000 2500
 F 0 "P3" H 6000 3150 50  0000 C CNN
-F 1 "CONN_01X12" V 6100 2500 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x12" H 6000 2500 50  0001 C CNN
+F 1 "NAV_01X12" V 6100 2500 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x12" H 6000 2500 50  0001 C CNN
 F 3 "" H 6000 2500 50  0000 C CNN
 	1    6000 2500
 	-1   0    0    1   
@@ -179,8 +179,8 @@ Text Label 3300 2050 0    60   ~ 0
 SPI_MISO
 Text Label 2800 1950 2    60   ~ 0
 SPI_CSN0
-NoConn ~ 2800 1850
-Text Label 3300 2350 0    60   ~ 0
+NoConn ~ 3300 2350
+Text Label 2800 1850 2    60   ~ 0
 1PPS
 Text Label 3300 1950 0    60   ~ 0
 SPI_SCK
@@ -188,23 +188,21 @@ Text Label 2800 2150 2    60   ~ 0
 GND
 Text Label 2800 2450 2    60   ~ 0
 GND
-Text Label 6200 3050 0    60   ~ 0
-GND
 NoConn ~ 6200 2950
 Text Label 3300 2750 0    60   ~ 0
 TRIG
 Text Label 5450 2950 2    60   ~ 0
 GPIO16
-Text Label 2800 2350 2    60   ~ 0
+Text Label 2800 2550 2    60   ~ 0
 GPIO16
 Text Label 5450 2850 2    60   ~ 0
 GPIO20
-Text Label 2800 2250 2    60   ~ 0
+Text Label 2800 2350 2    60   ~ 0
 GPIO20
 NoConn ~ 5450 2650
 Text Label 5450 2250 2    60   ~ 0
 GPIO14
-Text Label 3300 2450 0    60   ~ 0
+Text Label 2800 2250 2    60   ~ 0
 GPIO14
 Text Label 6200 2650 0    60   ~ 0
 GPIO12
@@ -212,12 +210,10 @@ Text Label 6200 2550 0    60   ~ 0
 GPIO13
 Text Label 3300 2550 0    60   ~ 0
 GPIO12
-Text Label 2800 2550 2    60   ~ 0
+Text Label 3300 2450 0    60   ~ 0
 GPIO13
 NoConn ~ 2800 2050
 NoConn ~ 6200 2750
-Text Notes 2400 3900 0    60   Italic 0
-Note: \nthe pin numbering here does\nnot directly correspond to the\nRPi pin numbers, to account\nfor the connector's header\norientation.
 $Comp
 L C C2
 U 1 1 5676322D
@@ -241,7 +237,7 @@ F 3 "" H 4400 2750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 5100 3800 0    60   Italic 0
-Regular sizeboards, at the moment:\n* NavSpark\n* NavSpark-GL\n* NavSpark-BD\nand other compatible boards
+Supporting regular size NavSpark boards,\nat the moment:\n* NavSpark\n* NavSpark-GL\n* NavSpark-BD\nand other compatible pinouts
 Wire Wire Line
 	4400 2150 4400 2300
 Wire Wire Line
@@ -262,4 +258,5 @@ Wire Wire Line
 Connection ~ 4400 2700
 Wire Wire Line
 	4100 2650 4400 2650
+NoConn ~ 6200 3050
 $EndSCHEMATC
