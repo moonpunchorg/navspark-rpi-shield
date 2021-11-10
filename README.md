@@ -27,7 +27,7 @@ Revision v1, the proof of concept looks like this:
 [GLONASS]: https://en.wikipedia.org/wiki/Global_Positioning_System "GLONASS on Wikipedia"
 [BeiDou]: https://en.wikipedia.org/wiki/BeiDou_Navigation_Satellite_System "BeiDou on Wikipedia"
 [timing]: https://gergely.imreh.net/blog/2015/11/navspark-beidou-ntp/ "Dual Satellite NTP server with Navspark"
-[kicad]: http://kicad-pcb.org/ "KiCad homepage"
+[kicad]: http://kicad.org/ "KiCad homepage"
 [fusionpcb]: https://www.seeedstudio.com/service/index.php?r=pcb "Seeed Studio FusionPCB"
 
 [pcbfront]: ./images/navspark_rpi_shield_v1_front.png "PCB front rendering with Kicad"
